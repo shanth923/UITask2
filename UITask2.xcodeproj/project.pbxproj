@@ -13,6 +13,21 @@
 		55FB8D1023E93204000DD010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FB8D0E23E93204000DD010 /* Main.storyboard */; };
 		55FB8D1223E93209000DD010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FB8D1123E93209000DD010 /* Assets.xcassets */; };
 		55FB8D1523E93209000DD010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FB8D1323E93209000DD010 /* LaunchScreen.storyboard */; };
+		55FB8D1D23E93253000DD010 /* NAvigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D1C23E93253000DD010 /* NAvigationViewController.swift */; };
+		55FB8D1F23E93273000DD010 /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D1E23E93273000DD010 /* BottomPopupViewController.swift */; };
+		55FB8D2123E932B1000DD010 /* BottomPopupDismissInteractionControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D2023E932B1000DD010 /* BottomPopupDismissInteractionControllerDelegate.swift */; };
+		55FB8D2323E932D2000DD010 /* BottomPopupDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D2223E932D2000DD010 /* BottomPopupDismissAnimator.swift */; };
+		55FB8D2523E932F0000DD010 /* BottomPopupUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D2423E932F0000DD010 /* BottomPopupUtilities.swift */; };
+		55FB8D2723E9330B000DD010 /* BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D2623E9330B000DD010 /* BottomPopupPresentAnimator.swift */; };
+		55FB8D2923E9331D000DD010 /* BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D2823E9331D000DD010 /* BottomPopupTransitionHandler.swift */; };
+		55FB8D2B23E93336000DD010 /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D2A23E93336000DD010 /* BottomPopupPresentationController.swift */; };
+		55FB8D2E23E933B3000DD010 /* bottompopNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D2D23E933B3000DD010 /* bottompopNavigation.swift */; };
+		55FB8D3023E9340E000DD010 /* popupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D2F23E9340E000DD010 /* popupViewController.swift */; };
+		55FB8D3C23E95E52000DD010 /* NavigatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D3B23E95E52000DD010 /* NavigatViewController.swift */; };
+		55FB8D3E23E95EFC000DD010 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D3D23E95EFC000DD010 /* CommentViewController.swift */; };
+		55FB8D4023E967CA000DD010 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D3F23E967CA000DD010 /* CustomTableViewCell.swift */; };
+		55FB8D4423E97F9F000DD010 /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D4323E97F9F000DD010 /* protocol.swift */; };
+		55FB8D4823E985AE000DD010 /* car123.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 55FB8D4723E985AE000DD010 /* car123.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +39,22 @@
 		55FB8D1123E93209000DD010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55FB8D1423E93209000DD010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55FB8D1623E93209000DD010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55FB8D1C23E93253000DD010 /* NAvigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAvigationViewController.swift; sourceTree = "<group>"; };
+		55FB8D1E23E93273000DD010 /* BottomPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
+		55FB8D2023E932B1000DD010 /* BottomPopupDismissInteractionControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissInteractionControllerDelegate.swift; sourceTree = "<group>"; };
+		55FB8D2223E932D2000DD010 /* BottomPopupDismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissAnimator.swift; sourceTree = "<group>"; };
+		55FB8D2423E932F0000DD010 /* BottomPopupUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupUtilities.swift; sourceTree = "<group>"; };
+		55FB8D2623E9330B000DD010 /* BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
+		55FB8D2823E9331D000DD010 /* BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
+		55FB8D2A23E93336000DD010 /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
+		55FB8D2D23E933B3000DD010 /* bottompopNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottompopNavigation.swift; sourceTree = "<group>"; };
+		55FB8D2F23E9340E000DD010 /* popupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popupViewController.swift; sourceTree = "<group>"; };
+		55FB8D3B23E95E52000DD010 /* NavigatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatViewController.swift; sourceTree = "<group>"; };
+		55FB8D3D23E95EFC000DD010 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		55FB8D3F23E967CA000DD010 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		55FB8D4323E97F9F000DD010 /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
+		55FB8D4523E98288000DD010 /* car123.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = car123.mp4; sourceTree = "<group>"; };
+		55FB8D4723E985AE000DD010 /* car123.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = car123.mp4; path = ../car123.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +71,11 @@
 		55FB8CFC23E93204000DD010 = {
 			isa = PBXGroup;
 			children = (
+				55FB8D4523E98288000DD010 /* car123.mp4 */,
+				55FB8D4723E985AE000DD010 /* car123.mp4 */,
 				55FB8D0723E93204000DD010 /* UITask2 */,
 				55FB8D0623E93204000DD010 /* Products */,
+				55FB8D2C23E9334E000DD010 /* bottompopups */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,7 +97,29 @@
 				55FB8D1123E93209000DD010 /* Assets.xcassets */,
 				55FB8D1323E93209000DD010 /* LaunchScreen.storyboard */,
 				55FB8D1623E93209000DD010 /* Info.plist */,
+				55FB8D2D23E933B3000DD010 /* bottompopNavigation.swift */,
+				55FB8D2F23E9340E000DD010 /* popupViewController.swift */,
+				55FB8D3B23E95E52000DD010 /* NavigatViewController.swift */,
+				55FB8D3D23E95EFC000DD010 /* CommentViewController.swift */,
+				55FB8D3F23E967CA000DD010 /* CustomTableViewCell.swift */,
+				55FB8D4323E97F9F000DD010 /* protocol.swift */,
 			);
+			path = UITask2;
+			sourceTree = "<group>";
+		};
+		55FB8D2C23E9334E000DD010 /* bottompopups */ = {
+			isa = PBXGroup;
+			children = (
+				55FB8D1C23E93253000DD010 /* NAvigationViewController.swift */,
+				55FB8D1E23E93273000DD010 /* BottomPopupViewController.swift */,
+				55FB8D2023E932B1000DD010 /* BottomPopupDismissInteractionControllerDelegate.swift */,
+				55FB8D2223E932D2000DD010 /* BottomPopupDismissAnimator.swift */,
+				55FB8D2423E932F0000DD010 /* BottomPopupUtilities.swift */,
+				55FB8D2623E9330B000DD010 /* BottomPopupPresentAnimator.swift */,
+				55FB8D2823E9331D000DD010 /* BottomPopupTransitionHandler.swift */,
+				55FB8D2A23E93336000DD010 /* BottomPopupPresentationController.swift */,
+			);
+			name = bottompopups;
 			path = UITask2;
 			sourceTree = "<group>";
 		};
@@ -127,6 +183,7 @@
 			files = (
 				55FB8D1523E93209000DD010 /* LaunchScreen.storyboard in Resources */,
 				55FB8D1223E93209000DD010 /* Assets.xcassets in Resources */,
+				55FB8D4823E985AE000DD010 /* car123.mp4 in Resources */,
 				55FB8D1023E93204000DD010 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +195,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55FB8D2E23E933B3000DD010 /* bottompopNavigation.swift in Sources */,
+				55FB8D2323E932D2000DD010 /* BottomPopupDismissAnimator.swift in Sources */,
+				55FB8D4023E967CA000DD010 /* CustomTableViewCell.swift in Sources */,
+				55FB8D1D23E93253000DD010 /* NAvigationViewController.swift in Sources */,
+				55FB8D2523E932F0000DD010 /* BottomPopupUtilities.swift in Sources */,
+				55FB8D3E23E95EFC000DD010 /* CommentViewController.swift in Sources */,
+				55FB8D1F23E93273000DD010 /* BottomPopupViewController.swift in Sources */,
 				55FB8D0D23E93204000DD010 /* ViewController.swift in Sources */,
+				55FB8D4423E97F9F000DD010 /* protocol.swift in Sources */,
 				55FB8D0923E93204000DD010 /* AppDelegate.swift in Sources */,
+				55FB8D3023E9340E000DD010 /* popupViewController.swift in Sources */,
+				55FB8D2123E932B1000DD010 /* BottomPopupDismissInteractionControllerDelegate.swift in Sources */,
+				55FB8D2B23E93336000DD010 /* BottomPopupPresentationController.swift in Sources */,
+				55FB8D2723E9330B000DD010 /* BottomPopupPresentAnimator.swift in Sources */,
 				55FB8D0B23E93204000DD010 /* SceneDelegate.swift in Sources */,
+				55FB8D2923E9331D000DD010 /* BottomPopupTransitionHandler.swift in Sources */,
+				55FB8D3C23E95E52000DD010 /* NavigatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
