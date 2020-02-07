@@ -51,30 +51,44 @@ class ViewController: UIViewController {
       var value = 0
         @IBAction func showNavigationControllerTapped(_ sender: UIButton) {
             
-            if ( value == 0){
-                button.center = CGPoint(x: 50, y: 300)
-                value += 1
-                
-            }
             
-            else if(value == 1)
-            {
-                button.center = CGPoint(x: 50, y: 800)
-                value -= 1
+            UIView.animate(withDuration: 1.0) {
+                self.button.transform = CGAffineTransform(translationX: 0, y: -500)
+//                self.redBottomView.transform = CGAffineTransform(translationX: -160, y: 0)
+//                self.blueTopView.transform = CGAffineTransform(translationX: -160, y: 0)
+//                self.blueBottomView.transform = CGAffineTransform(translationX: -160, y: 0)
             }
             
             
+//            if ( value == 0){
+//                button.center = CGPoint(x: 50, y: 300)
+//                value += 1
+//
+//            }
+//
+//            else if(value == 1)
+//            {
+//                button.center = CGPoint(x: 50, y: 800)
+//                value -= 1
+//            }
+            
+//        let view2 = UIView()
+//            view2.frame = CGRect(x: 0, y: 300, width: 400, height: 500)
+//            view2.backgroundColor = .red
+//            view.addSubview(view2)
             
 
-            guard let popupNavController = storyboard?.instantiateViewController(withIdentifier: "customNavController") as? bottompopNavigation else { return }
-            present(popupNavController, animated: true, completion: nil)
+//        guard let popupNavController = storyboard?.instantiateViewController(withIdentifier: "customNavController") as? bottompopNavigation else { return }
+//            present(popupNavController, animated: true, completion: nil)
+////
+//            view2.addSubview(popupNavController.view)
+                        
 //
-//
-//            let popupVC = storyboard?.instantiateViewController(withIdentifier: "secondVC") as? popupViewController
-////                   popupVC.shouldDismissInteractivelty = dismissInteractivelySwitch.isOn
-////                   popupVC.popupDelegate = self
-//            present(popupVC!, animated: true, completion: nil)
-//
+            let popupVC = storyboard?.instantiateViewController(withIdentifier: "secondVC") as? popupViewController
+//                   popupVC.shouldDismissInteractivelty = dismissInteractivelySwitch.isOn
+//                  popupVC.popupDelegate = self
+            present(popupVC!, animated: true, completion: nil)
+
             
             
             

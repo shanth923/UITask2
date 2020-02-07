@@ -12,6 +12,13 @@ import AVFoundation
 
 class CustomTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
+    @IBAction func details(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var imageView2: UIImageView!
+    
+    @IBOutlet weak var label: UILabel!
+    
     var delegate:PlayVideoCellProtocol?
     
     
@@ -23,6 +30,12 @@ class CustomTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "custom345", for: indexPath)
+        
+        
+        cell.contentView.layer.cornerRadius = cell.contentView.frame.width/6
+        cell.contentView.clipsToBounds = true
+        
+        
         return cell
     }
     
@@ -52,7 +65,12 @@ class CustomTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollection
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "3456")
+       imageView2.layer.cornerRadius = imageView2.frame.width/2
+        imageView2.clipsToBounds = true
+        
+        label.layer.cornerRadius = label.frame.width/18
+        label.clipsToBounds = true
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "1234")
         
         collectionView.delegate = self
         collectionView.dataSource = self

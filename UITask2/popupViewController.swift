@@ -8,26 +8,26 @@
 
 import UIKit
 
-class popupViewController: BottomPopupViewController,UITableViewDelegate,UITableViewDataSource {
+class popupViewController: BottomPopupViewController {
     
     
     
     var comments = ["hai","hello","good"]
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return comments.count
-        
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-    
-        let cell = tableView3.dequeueReusableCell(withIdentifier: "abc", for: indexPath) as! CustomTableViewCell
-    
-        return cell
-    }
-    
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//
+//        return comments.count
+//
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//
+//        let cell = tableView3.dequeueReusableCell(withIdentifier: "abc", for: indexPath) as! CustomTableViewCell
+//
+//        return cell
+//    }
+//
     
     
     @IBOutlet weak var tableView3: UITableView!
@@ -54,12 +54,12 @@ class popupViewController: BottomPopupViewController,UITableViewDelegate,UITable
     
       override func viewDidLoad() {
                 super.viewDidLoad()
-let nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
+//let nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
         
         
-        tableView3.register(nib, forCellReuseIdentifier: "abc")
-        tableView3.delegate = self
-        tableView3.dataSource = self
+//        tableView3.register(nib, forCellReuseIdentifier: "123")
+//        tableView3.delegate = self
+//        tableView3.dataSource = self
     //            let viewTapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
     //            view.addGestureRecognizer(viewTapGesture)
         }

@@ -10,6 +10,9 @@ import UIKit
 import AVKit
 
 class NavigatViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,PlayVideoCellProtocol {
+    @IBOutlet weak var dtails: UIButton!
+    
+    
     
    
     
@@ -19,6 +22,20 @@ class NavigatViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "custom345", for: indexPath) as! CustomTableViewCell
+        cell.backgroundColor = .clear
+        
+        cell.collectionView.layer.cornerRadius = cell.collectionView.frame.width/13
+        cell.contentView.layer.cornerRadius = cell.contentView.frame.width/10
+//        cell.contentView.layer.cornerRadius = 5.0
+        cell.contentView.layer.borderColor  =  UIColor.clear.cgColor
+//        cell.contentView.layer.borderWidth = 5.0
+        cell.contentView.layer.shadowOpacity = 0.5
+        cell.contentView.layer.shadowColor =  UIColor.systemBlue.cgColor
+//        cell.contentView.layer.shadowRadius = 5.0
+//        cell.contentView.layer.shadowOffset = CGSize(width:5, height: 5)
+        cell.contentView.layer.masksToBounds = true
+        
+        
         
         cell.delegate = self
         
@@ -26,7 +43,7 @@ class NavigatViewController: UIViewController,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 390
         
         
     }
@@ -52,6 +69,11 @@ class NavigatViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+
+        
+        
 
         tableView4.register(CustomTableViewCell.self, forCellReuseIdentifier: "1234")
         

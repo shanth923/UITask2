@@ -28,6 +28,7 @@
 		55FB8D4023E967CA000DD010 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D3F23E967CA000DD010 /* CustomTableViewCell.swift */; };
 		55FB8D4423E97F9F000DD010 /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D4323E97F9F000DD010 /* protocol.swift */; };
 		55FB8D4823E985AE000DD010 /* car123.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 55FB8D4723E985AE000DD010 /* car123.mp4 */; };
+		55FB8D4C23E9A580000DD010 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB8D4B23E9A580000DD010 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		55FB8D4323E97F9F000DD010 /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
 		55FB8D4523E98288000DD010 /* car123.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = car123.mp4; sourceTree = "<group>"; };
 		55FB8D4723E985AE000DD010 /* car123.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = car123.mp4; path = ../car123.mp4; sourceTree = "<group>"; };
+		55FB8D4B23E9A580000DD010 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				55FB8D3D23E95EFC000DD010 /* CommentViewController.swift */,
 				55FB8D3F23E967CA000DD010 /* CustomTableViewCell.swift */,
 				55FB8D4323E97F9F000DD010 /* protocol.swift */,
+				55FB8D4B23E9A580000DD010 /* ViewController2.swift */,
 			);
 			path = UITask2;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				55FB8D4423E97F9F000DD010 /* protocol.swift in Sources */,
 				55FB8D0923E93204000DD010 /* AppDelegate.swift in Sources */,
 				55FB8D3023E9340E000DD010 /* popupViewController.swift in Sources */,
+				55FB8D4C23E9A580000DD010 /* ViewController2.swift in Sources */,
 				55FB8D2123E932B1000DD010 /* BottomPopupDismissInteractionControllerDelegate.swift in Sources */,
 				55FB8D2B23E93336000DD010 /* BottomPopupPresentationController.swift in Sources */,
 				55FB8D2723E9330B000DD010 /* BottomPopupPresentAnimator.swift in Sources */,

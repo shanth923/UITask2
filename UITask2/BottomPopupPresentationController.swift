@@ -55,19 +55,19 @@ class BottomPopupPresentationController: UIPresentationController {
     
     
         
-//        override func dismissalTransitionWillBegin() {
-//            changeDimmingViewAlphaAlongWithAnimation(to: 0)
-//        }
+        override func dismissalTransitionWillBegin() {
+            changeDimmingViewAlphaAlongWithAnimation(to: 0)
+        }
         
-//        @objc private func handleTap(_ tap: UITapGestureRecognizer) {
-//            guard attributesDelegate.popupShouldBeganDismiss else { return }
-//            presentedViewController.dismiss(animated: true, completion: nil)
-//        }
-//
-//        @objc private func handleSwipe(_ swipe: UISwipeGestureRecognizer) {
-//            guard attributesDelegate.popupShouldBeganDismiss else { return }
-//            presentedViewController.dismiss(animated: true, completion: nil)
-//        }
+        @objc private func handleTap(_ tap: UITapGestureRecognizer) {
+            guard attributesDelegate.popupShouldBeganDismiss else { return }
+            presentedViewController.dismiss(animated: true, completion: nil)
+        }
+
+        @objc private func handleSwipe(_ swipe: UISwipeGestureRecognizer) {
+            guard attributesDelegate.popupShouldBeganDismiss else { return }
+            presentedViewController.dismiss(animated: true, completion: nil)
+        }
     }
 
     private extension BottomPopupPresentationController {
@@ -77,16 +77,11 @@ class BottomPopupPresentationController: UIPresentationController {
             dimmingView.backgroundColor = UIColor.black.withAlphaComponent(0)
             dimmingView.isUserInteractionEnabled = true
             
-            button2 = UIButton()
-            button2.frame = CGRect(x: 10, y: 200, width: 50, height: 50)
-            button2.backgroundColor = .red
-            button2.isUserInteractionEnabled = true
-   
-//            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-//            let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(_:)))
-//            swipeGesture.direction = [.down, .up]
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+            let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(_:)))
+            swipeGesture.direction = [.down, .up]
            
-//            [tapGesture, swipeGesture].forEach { dimmingView.addGestureRecognizer($0) }
+            [tapGesture, swipeGesture].forEach { dimmingView.addGestureRecognizer($0) }
         }
     }
 
